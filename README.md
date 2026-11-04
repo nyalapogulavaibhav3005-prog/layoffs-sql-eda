@@ -44,17 +44,34 @@ The raw `layoffs` table is never edited. All work is done on copies (`layoffs_du
 **SQL concepts used:** aggregate functions, CTEs, window functions, `DENSE_RANK()`, rolling totals.
 
 ## Key Findings
-Based on the cleaned data (1,995 rows):
-- **Total layoffs recorded:** about 383,700 people.
-- **Top companies:** Amazon (~18,150), Google (12,000), Meta (11,000), Salesforce (~10,090), and Microsoft (10,000).
-- **Top industries:** Consumer (~45,200), Retail (~43,600), Other (~36,300), Transportation (~33,700), and Finance (~28,300).
-- **By country:** the United States accounts for roughly two-thirds of all layoffs (~256,600), followed by India (~36,000) and the Netherlands (~17,200).
-- **By year:** 2022 had the most layoffs (~160,700). 2023 reached ~125,700 in just the first two months and a few days of March.
-- **By funding stage:** Post-IPO companies account for over half of all layoffs (~204,100).
-- **Shutdowns:** 116 companies laid off 100% of their workforce.
+Based on the cleaned data:
+- **Top companies by total layoffs:** Amazon (18,150), Google (12,000), Meta (11,000), Salesforce (10,090), with Philips and Microsoft tied at 10,000.
+- **By year:** 2022 had the most layoffs (159,611), followed by 2023 (124,077), 2020 (80,928), and 2021 (15,823). The 2023 total covers only about the first two months of the year, since the data ends in March 2023.
+- **Biggest spikes:** monthly layoffs jumped to 53,151 in November 2022 and 84,714 in January 2023.
+- **Rolling total:** layoffs in the dataset passed 380,000 by March 2023.
+- **Industry trends:** Transportation, Travel, and Finance led in 2020, Retail led in 2022, and "Other" led in 2023.
 
 ## Screenshots
-_Add 2 or 3 screenshots of your query results here._
+
+**Rolling total of layoffs by month** (CTE + window function)
+
+![Rolling total of layoffs by month](screenshots/rolling_total.png)
+
+**Top 3 industries by layoffs each year** (CTE + DENSE_RANK)
+
+![Top 3 industries by layoffs each year](screenshots/top_industries_per_year.png)
+
+**Top 5 companies by layoffs each year** (CTE + DENSE_RANK)
+
+![Top 5 companies by layoffs each year](screenshots/top_companies_per_year.png)
+
+**Top 10 companies by total layoffs**
+
+![Top 10 companies by total layoffs](screenshots/top_10_companies.png)
+
+**Total layoffs by year**
+
+![Total layoffs by year](screenshots/layoffs_by_year.png)
 
 ## How to Run
 1. Import the raw layoffs dataset into MySQL as a table named `layoffs`.
