@@ -54,24 +54,21 @@ Based on the cleaned data:
 ## Screenshots
 
 **Rolling total of layoffs by month** (CTE + window function)
+<img width="488" height="481" alt="Screenshot 2026-11-04 182411" src="https://github.com/user-attachments/assets/6af69814-e090-4fd7-93ce-9e38ca15a077" />
 
-![Rolling total of layoffs by month](screenshots/rolling_total.png)
 
 **Top 3 industries by layoffs each year** (CTE + DENSE_RANK)
-
-![Top 3 industries by layoffs each year](screenshots/top_industries_per_year.png)
+<img width="522" height="298" alt="Screenshot 2026-11-04 181833" src="https://github.com/user-attachments/assets/e9319a60-cf36-47ed-ab69-6d70184c3009" />
 
 **Top 5 companies by layoffs each year** (CTE + DENSE_RANK)
-
-![Top 5 companies by layoffs each year](screenshots/top_companies_per_year.png)
+<img width="497" height="202" alt="Screenshot 2026-11-04 182029" src="https://github.com/user-attachments/assets/38ecc311-9f54-434a-89f6-f5bec28fdc9c" />
 
 **Top 10 companies by total layoffs**
-
-![Top 10 companies by total layoffs](screenshots/top_10_companies.png)
+<img width="327" height="245" alt="Screenshot 2026-11-04 182437" src="https://github.com/user-attachments/assets/dc431015-e229-40ef-bf08-4b2bba242a19" />
 
 **Total layoffs by year**
+<img width="202" height="134" alt="Screenshot 2026-11-04 182527" src="https://github.com/user-attachments/assets/5fd6b93d-987c-4397-bae5-9189a16873a0" />
 
-![Total layoffs by year](screenshots/layoffs_by_year.png)
 
 ## How to Run
 1. Import the raw layoffs dataset into MySQL as a table named `layoffs`.
