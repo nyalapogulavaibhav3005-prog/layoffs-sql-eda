@@ -84,4 +84,4 @@ Based on the cleaned data:
 3. Run `02_exploratory_data_analysis.sql`.
 
 ## Author
-**Nyalapogula Sai Vaibhav** · [LinkedIn](https://www.linkedin.com/in/saivaibhav2067)
+**Nyalapogula Sai Vaibhav** ·[https://www.linkedin.com/in/sai-vaibhav2067/]
